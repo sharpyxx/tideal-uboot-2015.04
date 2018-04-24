@@ -1,0 +1,8 @@
+MX6QTIDEAL BOARD
+M:	Fabio Estevam <fabio.estevam@freescale.com>
+S:	Maintained
+F:	board/freescale/mx6qtideal/
+F:	include/configs/mx6qtideal.h
+F:	configs/mx6dlsabresd_defconfig
+F:	configs/mx6q_tideal_defconfig
+F:	configs/mx6sabresd_spl_defconfig
