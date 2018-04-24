@@ -782,7 +782,9 @@ init_fnc_t init_sequence_r[] = {
 #ifdef CONFIG_ARCH_EARLY_INIT_R
 	arch_early_init_r,
 #endif
-	power_init_board,
+
+//	power_init_board,
+
 #ifndef CONFIG_SYS_NO_FLASH
 	initr_flash,
 #endif
@@ -935,7 +937,7 @@ void board_init_r(gd_t *new_gd, ulong dest_addr)
 	for (i = 0; i < ARRAY_SIZE(init_sequence_r); i++)
 		init_sequence_r[i] += gd->reloc_off;
 #endif
-
+	printf("mydebug:init_sequence_r Begin\n");
 	if (initcall_run_list(init_sequence_r))
 		hang();
 
